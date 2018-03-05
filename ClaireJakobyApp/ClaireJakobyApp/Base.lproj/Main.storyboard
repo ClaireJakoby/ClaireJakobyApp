@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mtm-8R-F2Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View1-->
+        <scene sceneID="8dQ-Oh-LA7">
+            <objects>
+                <viewController storyboardIdentifier="v1" id="NpN-Qm-WFg" customClass="IntroView1" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GDV-GE-Ob8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-WO-rcO">
+                                <rect key="frame" x="16" y="546" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="WOl-9U-nu3"/>
+                                    <constraint firstAttribute="height" constant="101" id="pNM-rn-tya"/>
+                                    <constraint firstAttribute="width" secondItem="B9x-WO-rcO" secondAttribute="height" multiplier="343:101" id="tv8-gt-ogm"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnk-wc-7Jb" customClass="CSAnimationView">
+                                <rect key="frame" x="37" y="20" width="300" height="466"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hallo :)" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcU-7J-BEp">
+                                        <rect key="frame" x="8" y="8" width="284" height="458"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nnk-wc-7Jb" firstAttribute="centerX" secondItem="B9x-WO-rcO" secondAttribute="centerX" id="4XS-IF-bln"/>
+                            <constraint firstItem="B9x-WO-rcO" firstAttribute="leading" secondItem="Vul-Ru-YU6" secondAttribute="leading" constant="16" id="4ra-Ab-cey"/>
+                            <constraint firstItem="Nnk-wc-7Jb" firstAttribute="leading" secondItem="Vul-Ru-YU6" secondAttribute="leading" constant="37" id="FJC-zB-aDR"/>
+                            <constraint firstItem="Nnk-wc-7Jb" firstAttribute="top" secondItem="Vul-Ru-YU6" secondAttribute="top" id="KpU-AE-jsG"/>
+                            <constraint firstItem="Vul-Ru-YU6" firstAttribute="trailing" secondItem="B9x-WO-rcO" secondAttribute="trailing" constant="16" id="TYu-8s-0ma"/>
+                            <constraint firstItem="Vul-Ru-YU6" firstAttribute="bottom" secondItem="B9x-WO-rcO" secondAttribute="bottom" constant="20" id="d6D-Yk-Z6M"/>
+                            <constraint firstItem="B9x-WO-rcO" firstAttribute="top" secondItem="Nnk-wc-7Jb" secondAttribute="bottom" constant="60" id="gWA-TV-jrJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vul-Ru-YU6"/>
+                    </view>
+                    <connections>
+                        <outlet property="introText" destination="pcU-7J-BEp" id="3dz-Da-u2e"/>
+                        <outlet property="swipeAnimation" destination="B9x-WO-rcO" id="8x8-WL-UfO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWi-rF-Fak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303.19999999999999" y="730.88455772113946"/>
+        </scene>
+        <!--Intro View2-->
+        <scene sceneID="9nJ-EL-mbi">
+            <objects>
+                <viewController storyboardIdentifier="v2" id="JdS-Cd-KRW" customClass="IntroView2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YL4-5e-w67">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s15-L1-Q5w">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="centerY" secondItem="YL4-5e-w67" secondAttribute="centerY" id="0nj-QI-9zV"/>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="centerX" secondItem="YL4-5e-w67" secondAttribute="centerX" id="OFb-st-GxE"/>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="leading" secondItem="Ucr-fk-99T" secondAttribute="leading" constant="166" id="gam-Kv-ddU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ucr-fk-99T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvh-bL-Cl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="731"/>
+        </scene>
+        <!--Knock Screen-->
+        <scene sceneID="HtY-BD-qgw">
+            <objects>
+                <viewController storyboardIdentifier="V3KnockScreen" id="aJO-Ex-cp9" customClass="KnockScreen" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0P-Lo-ZW0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzl-1S-yd1" customClass="CSAnimationView">
+                                <rect key="frame" x="67" y="407" width="240" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWu-ne-38C">
+                                        <rect key="frame" x="97" y="105" width="46" height="30"/>
+                                        <state key="normal" title="Knock"/>
+                                        <connections>
+                                            <action selector="knockButoonPressed:" destination="aJO-Ex-cp9" eventType="touchUpInside" id="l57-uV-PzN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OWu-ne-38C" firstAttribute="centerY" secondItem="bzl-1S-yd1" secondAttribute="centerY" id="65W-qY-yzU"/>
+                                    <constraint firstItem="OWu-ne-38C" firstAttribute="leading" secondItem="bzl-1S-yd1" secondAttribute="leading" constant="97" id="8Zq-Ij-AtQ"/>
+                                    <constraint firstItem="OWu-ne-38C" firstAttribute="centerX" secondItem="bzl-1S-yd1" secondAttribute="centerX" id="y4N-Mn-70g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bzl-1S-yd1" firstAttribute="leading" secondItem="9Ro-Y7-RaO" secondAttribute="leading" constant="67" id="30d-ik-OFh"/>
+                            <constraint firstAttribute="bottom" secondItem="bzl-1S-yd1" secondAttribute="bottom" constant="20" symbolic="YES" id="6de-O9-jow"/>
+                            <constraint firstItem="bzl-1S-yd1" firstAttribute="centerX" secondItem="o0P-Lo-ZW0" secondAttribute="centerX" id="RO8-mU-egI"/>
+                            <constraint firstItem="bzl-1S-yd1" firstAttribute="top" secondItem="9Ro-Y7-RaO" secondAttribute="top" constant="387" id="gDJ-2s-Z5k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Ro-Y7-RaO"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="bzl-1S-yd1" id="J9W-nO-aDQ"/>
+                        <segue destination="CYb-vh-CYt" kind="show" identifier="test" id="f84-fN-g3f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pHs-3c-r6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="730.88455772113946"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NhU-Wv-xAM">
+            <objects>
+                <viewController id="CYb-vh-CYt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jw3-3n-MPn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.2784313725" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="C4s-PS-8cB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PZZ-Is-pT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyp-UG-vla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="731"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="yB7-b3-mzE">
+            <objects>
+                <viewController id="Mtm-8R-F2Q" customClass="IntroViewController" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWj-j6-lId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jx-63-f1t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2jx-63-f1t" firstAttribute="bottom" secondItem="wTi-4B-AwW" secondAttribute="bottom" id="9UU-J8-Ps2"/>
+                            <constraint firstItem="2jx-63-f1t" firstAttribute="trailing" secondItem="wTi-4B-AwW" secondAttribute="trailing" id="B1u-pb-VJ1"/>
+                            <constraint firstItem="2jx-63-f1t" firstAttribute="top" secondItem="yWj-j6-lId" secondAttribute="top" id="Kea-vR-xmX"/>
+                            <constraint firstItem="2jx-63-f1t" firstAttribute="leading" secondItem="wTi-4B-AwW" secondAttribute="leading" id="QZZ-eP-wAu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wTi-4B-AwW"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="2jx-63-f1t" id="73U-O0-wTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DId-4f-NeZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1012" y="731"/>
+        </scene>
+    </scenes>
+</document>

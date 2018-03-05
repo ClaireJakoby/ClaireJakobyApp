@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20158861E04C7A948C125DF7 /* Pods_ClaireJakobyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */; };
+		FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57C47C204D6B6A00193A0F /* AppDelegate.swift */; };
+		FF57C482204D6B6B00193A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF57C480204D6B6B00193A0F /* Main.storyboard */; };
+		FF57C484204D6B6B00193A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF57C483204D6B6B00193A0F /* Assets.xcassets */; };
+		FF57C487204D6B6B00193A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF57C485204D6B6B00193A0F /* LaunchScreen.storyboard */; };
+		FFAD222B204D6F4C00C3B77A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAD222A204D6F4C00C3B77A /* SWRevealViewController.m */; };
+		FFAD222E204D710500C3B77A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAD222D204D710400C3B77A /* AudioToolbox.framework */; };
+		FFAD2230204D713C00C3B77A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAD222F204D713C00C3B77A /* AVFoundation.framework */; };
+		FFAD2232204D71F100C3B77A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2231204D71F100C3B77A /* IntroViewController.swift */; };
+		FFAD2234204D721000C3B77A /* IntroView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2233204D721000C3B77A /* IntroView1.swift */; };
+		FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2235204D721C00C3B77A /* IntroView2.swift */; };
+		FFAD2238204D723800C3B77A /* KnockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2237204D723800C3B77A /* KnockScreen.swift */; };
+		FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2239204D729E00C3B77A /* Swift+Gif.swift */; };
+		FFAD223C204D72E100C3B77A /* Swipe_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFAD223B204D72E100C3B77A /* Swipe_animation.gif */; };
+		FFAD223E204D72FF00C3B77A /* knock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAD223D204D72FE00C3B77A /* knock.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		506386F99767D6CF2A184DA4 /* Pods-ClaireJakobyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClaireJakobyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5814A83B5E839662032458 /* Pods-ClaireJakobyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.release.xcconfig"; sourceTree = "<group>"; };
+		FF57C479204D6B6A00193A0F /* ClaireJakobyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaireJakobyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF57C47C204D6B6A00193A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF57C481204D6B6B00193A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF57C483204D6B6B00193A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF57C486204D6B6B00193A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF57C488204D6B6B00193A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFAD2228204D6F4600C3B77A /* ClaireJakobyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClaireJakobyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFAD2229204D6F4A00C3B77A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FFAD222A204D6F4C00C3B77A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FFAD222D204D710400C3B77A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FFAD222F204D713C00C3B77A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FFAD2231204D71F100C3B77A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		FFAD2233204D721000C3B77A /* IntroView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView1.swift; sourceTree = "<group>"; };
+		FFAD2235204D721C00C3B77A /* IntroView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView2.swift; sourceTree = "<group>"; };
+		FFAD2237204D723800C3B77A /* KnockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockScreen.swift; sourceTree = "<group>"; };
+		FFAD2239204D729E00C3B77A /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		FFAD223B204D72E100C3B77A /* Swipe_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Swipe_animation.gif; sourceTree = "<group>"; };
+		FFAD223D204D72FE00C3B77A /* knock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knock.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF57C476204D6B6900193A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAD2230204D713C00C3B77A /* AVFoundation.framework in Frameworks */,
+				FFAD222E204D710500C3B77A /* AudioToolbox.framework in Frameworks */,
+				20158861E04C7A948C125DF7 /* Pods_ClaireJakobyApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99CC7B0373E96A3BC4D6C909 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				506386F99767D6CF2A184DA4 /* Pods-ClaireJakobyApp.debug.xcconfig */,
+				DA5814A83B5E839662032458 /* Pods-ClaireJakobyApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9AE2674926CF1D87FB74D63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFAD222F204D713C00C3B77A /* AVFoundation.framework */,
+				FFAD222D204D710400C3B77A /* AudioToolbox.framework */,
+				72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF57C470204D6B6900193A0F = {
+			isa = PBXGroup;
+			children = (
+				FF57C47B204D6B6A00193A0F /* ClaireJakobyApp */,
+				FF57C47A204D6B6A00193A0F /* Products */,
+				99CC7B0373E96A3BC4D6C909 /* Pods */,
+				D9AE2674926CF1D87FB74D63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF57C47A204D6B6A00193A0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF57C479204D6B6A00193A0F /* ClaireJakobyApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF57C47B204D6B6A00193A0F /* ClaireJakobyApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF57C47C204D6B6A00193A0F /* AppDelegate.swift */,
+				FFAD222C204D70EC00C3B77A /* Intro */,
+				FF57C480204D6B6B00193A0F /* Main.storyboard */,
+				FF57C485204D6B6B00193A0F /* LaunchScreen.storyboard */,
+				FFAD2227204D6F1F00C3B77A /* Supporting Files */,
+				FF57C483204D6B6B00193A0F /* Assets.xcassets */,
+				FF57C488204D6B6B00193A0F /* Info.plist */,
+			);
+			path = ClaireJakobyApp;
+			sourceTree = "<group>";
+		};
+		FFAD2227204D6F1F00C3B77A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFAD2229204D6F4A00C3B77A /* SWRevealViewController.h */,
+				FFAD222A204D6F4C00C3B77A /* SWRevealViewController.m */,
+				FFAD2228204D6F4600C3B77A /* ClaireJakobyApp-Bridging-Header.h */,
+				FFAD2239204D729E00C3B77A /* Swift+Gif.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFAD222C204D70EC00C3B77A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				FFAD2231204D71F100C3B77A /* IntroViewController.swift */,
+				FFAD2233204D721000C3B77A /* IntroView1.swift */,
+				FFAD2235204D721C00C3B77A /* IntroView2.swift */,
+				FFAD2237204D723800C3B77A /* KnockScreen.swift */,
+				FFAD223B204D72E100C3B77A /* Swipe_animation.gif */,
+				FFAD223D204D72FE00C3B77A /* knock.mp3 */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF57C478204D6B6900193A0F /* ClaireJakobyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF57C48B204D6B6B00193A0F /* Build configuration list for PBXNativeTarget "ClaireJakobyApp" */;
+			buildPhases = (
+				70E823C0CCEFFF7142C1A897 /* [CP] Check Pods Manifest.lock */,
+				FF57C475204D6B6900193A0F /* Sources */,
+				FF57C476204D6B6900193A0F /* Frameworks */,
+				FF57C477204D6B6900193A0F /* Resources */,
+				BAA2037B9ADDF8259F76EDEA /* [CP] Embed Pods Frameworks */,
+				F25F016441E06F15493B010C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClaireJakobyApp;
+			productName = ClaireJakobyApp;
+			productReference = FF57C479204D6B6A00193A0F /* ClaireJakobyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF57C471204D6B6900193A0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Claire Jakoby";
+				TargetAttributes = {
+					FF57C478204D6B6900193A0F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF57C474204D6B6900193A0F /* Build configuration list for PBXProject "ClaireJakobyApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF57C470204D6B6900193A0F;
+			productRefGroup = FF57C47A204D6B6A00193A0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF57C478204D6B6900193A0F /* ClaireJakobyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF57C477204D6B6900193A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF57C487204D6B6B00193A0F /* LaunchScreen.storyboard in Resources */,
+				FFAD223E204D72FF00C3B77A /* knock.mp3 in Resources */,
+				FF57C484204D6B6B00193A0F /* Assets.xcassets in Resources */,
+				FFAD223C204D72E100C3B77A /* Swipe_animation.gif in Resources */,
+				FF57C482204D6B6B00193A0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70E823C0CCEFFF7142C1A897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClaireJakobyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA2037B9ADDF8259F76EDEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25F016441E06F15493B010C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF57C475204D6B6900193A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAD2232204D71F100C3B77A /* IntroViewController.swift in Sources */,
+				FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */,
+				FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */,
+				FFAD222B204D6F4C00C3B77A /* SWRevealViewController.m in Sources */,
+				FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */,
+				FFAD2238204D723800C3B77A /* KnockScreen.swift in Sources */,
+				FFAD2234204D721000C3B77A /* IntroView1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF57C480204D6B6B00193A0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF57C481204D6B6B00193A0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF57C485204D6B6B00193A0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF57C486204D6B6B00193A0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF57C489204D6B6B00193A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF57C48A204D6B6B00193A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF57C48C204D6B6B00193A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506386F99767D6CF2A184DA4 /* Pods-ClaireJakobyApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DGL34B47;
+				INFOPLIST_FILE = ClaireJakobyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CJ.ClaireJakobyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClaireJakobyApp/Supporting Files/ClaireJakobyApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF57C48D204D6B6B00193A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5814A83B5E839662032458 /* Pods-ClaireJakobyApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5DGL34B47;
+				INFOPLIST_FILE = ClaireJakobyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CJ.ClaireJakobyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClaireJakobyApp/Supporting Files/ClaireJakobyApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF57C474204D6B6900193A0F /* Build configuration list for PBXProject "ClaireJakobyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF57C489204D6B6B00193A0F /* Debug */,
+				FF57C48A204D6B6B00193A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF57C48B204D6B6B00193A0F /* Build configuration list for PBXNativeTarget "ClaireJakobyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF57C48C204D6B6B00193A0F /* Debug */,
+				FF57C48D204D6B6B00193A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF57C471204D6B6900193A0F /* Project object */;
+}
