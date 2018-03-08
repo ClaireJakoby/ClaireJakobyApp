@@ -12,7 +12,6 @@
 		FF57C482204D6B6B00193A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF57C480204D6B6B00193A0F /* Main.storyboard */; };
 		FF57C484204D6B6B00193A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF57C483204D6B6B00193A0F /* Assets.xcassets */; };
 		FF57C487204D6B6B00193A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF57C485204D6B6B00193A0F /* LaunchScreen.storyboard */; };
-		FF8EB9682050AD2D00044473 /* RevealMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8EB9672050AD2D00044473 /* RevealMenuTableVC.swift */; };
 		FF97651B204F31E000E12F30 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF97651A204F31E000E12F30 /* MainPage.swift */; };
 		FFAD222B204D6F4C00C3B77A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAD222A204D6F4C00C3B77A /* SWRevealViewController.m */; };
 		FFAD222E204D710500C3B77A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAD222D204D710400C3B77A /* AudioToolbox.framework */; };
@@ -36,7 +35,6 @@
 		FF57C483204D6B6B00193A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF57C486204D6B6B00193A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF57C488204D6B6B00193A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF8EB9672050AD2D00044473 /* RevealMenuTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealMenuTableVC.swift; sourceTree = "<group>"; };
 		FF97651A204F31E000E12F30 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		FFAD2228204D6F4600C3B77A /* ClaireJakobyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClaireJakobyApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		FFAD2229204D6F4A00C3B77A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				FFAD2229204D6F4A00C3B77A /* SWRevealViewController.h */,
 				FFAD222A204D6F4C00C3B77A /* SWRevealViewController.m */,
 				FFAD2228204D6F4600C3B77A /* ClaireJakobyApp-Bridging-Header.h */,
-				FF8EB9672050AD2D00044473 /* RevealMenuTableVC.swift */,
 				FFAD2239204D729E00C3B77A /* Swift+Gif.swift */,
 			);
 			path = "Supporting Files";
@@ -287,7 +284,6 @@
 				FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */,
 				FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */,
 				FF97651B204F31E000E12F30 /* MainPage.swift in Sources */,
-				FF8EB9682050AD2D00044473 /* RevealMenuTableVC.swift in Sources */,
 				FFAD222B204D6F4C00C3B77A /* SWRevealViewController.m in Sources */,
 				FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */,
 				FFAD2238204D723800C3B77A /* KnockScreen.swift in Sources */,
