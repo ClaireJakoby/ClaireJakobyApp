@@ -14,6 +14,8 @@ import AudioToolbox
 
 class KnockScreen: UIViewController {
     
+    @IBOutlet var codeText: UILabel!
+
     
     var audioPlayer = AVAudioPlayer()
     
@@ -60,6 +62,7 @@ class KnockScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        codeText.text = "Dit lijkt misschien niet heel veel maar dit was een enorme stap voor me toen ik begon met swift leren. Dit leg ik later aan verder uit in het Apps page"
     }
 }
 

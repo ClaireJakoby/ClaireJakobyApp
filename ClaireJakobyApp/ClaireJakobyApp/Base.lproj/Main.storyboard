@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,30 +75,34 @@
         <!--Intro View2-->
         <scene sceneID="9nJ-EL-mbi">
             <objects>
-                <viewController storyboardIdentifier="v2" id="JdS-Cd-KRW" customClass="IntroView2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="v2" id="JdS-Cd-KRW" customClass="IntroView2" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YL4-5e-w67">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s15-L1-Q5w">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V2" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s15-L1-Q5w">
+                                <rect key="frame" x="16" y="95" width="343" height="410"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="s15-L1-Q5w" firstAttribute="centerY" secondItem="YL4-5e-w67" secondAttribute="centerY" id="0nj-QI-9zV"/>
-                            <constraint firstItem="s15-L1-Q5w" firstAttribute="centerX" secondItem="YL4-5e-w67" secondAttribute="centerX" id="OFb-st-GxE"/>
-                            <constraint firstItem="s15-L1-Q5w" firstAttribute="leading" secondItem="Ucr-fk-99T" secondAttribute="leading" constant="166" id="gam-Kv-ddU"/>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="top" secondItem="Ucr-fk-99T" secondAttribute="top" constant="75" id="IZf-VJ-VJh"/>
+                            <constraint firstItem="Ucr-fk-99T" firstAttribute="bottom" secondItem="s15-L1-Q5w" secondAttribute="bottom" constant="162" id="KOE-HN-wv3"/>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="leading" secondItem="YL4-5e-w67" secondAttribute="leadingMargin" id="asE-da-Agk"/>
+                            <constraint firstItem="s15-L1-Q5w" firstAttribute="trailing" secondItem="YL4-5e-w67" secondAttribute="trailingMargin" id="t7U-vj-4qc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ucr-fk-99T"/>
                     </view>
+                    <connections>
+                        <outlet property="introTextPartTwo" destination="s15-L1-Q5w" id="rAw-oU-Dam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvh-bL-Cl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385" y="731"/>
+            <point key="canvasLocation" x="384.80000000000001" y="730.88455772113946"/>
         </scene>
         <!--Knock Screen-->
         <scene sceneID="HtY-BD-qgw">
@@ -134,18 +139,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bE-aP-fTf">
+                                <rect key="frame" x="67" y="167" width="240" height="177"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bzl-1S-yd1" firstAttribute="leading" secondItem="9Ro-Y7-RaO" secondAttribute="leading" constant="67" id="30d-ik-OFh"/>
                             <constraint firstAttribute="bottom" secondItem="bzl-1S-yd1" secondAttribute="bottom" constant="20" symbolic="YES" id="6de-O9-jow"/>
+                            <constraint firstItem="bzl-1S-yd1" firstAttribute="top" secondItem="9bE-aP-fTf" secondAttribute="bottom" constant="63" id="JOi-R8-0hQ"/>
+                            <constraint firstItem="9bE-aP-fTf" firstAttribute="leading" secondItem="bzl-1S-yd1" secondAttribute="leading" id="MfM-Yy-arX"/>
+                            <constraint firstItem="9bE-aP-fTf" firstAttribute="trailing" secondItem="bzl-1S-yd1" secondAttribute="trailing" id="Nap-fy-ztz"/>
                             <constraint firstItem="bzl-1S-yd1" firstAttribute="centerX" secondItem="o0P-Lo-ZW0" secondAttribute="centerX" id="RO8-mU-egI"/>
+                            <constraint firstItem="9bE-aP-fTf" firstAttribute="top" secondItem="9Ro-Y7-RaO" secondAttribute="top" constant="147" id="euY-tR-7qu"/>
                             <constraint firstItem="bzl-1S-yd1" firstAttribute="top" secondItem="9Ro-Y7-RaO" secondAttribute="top" constant="387" id="gDJ-2s-Z5k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ro-Y7-RaO"/>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="bzl-1S-yd1" id="J9W-nO-aDQ"/>
+                        <outlet property="codeText" destination="9bE-aP-fTf" id="qI6-PJ-ZUq"/>
                         <segue destination="CYb-vh-CYt" kind="show" identifier="test" id="f84-fN-g3f"/>
                     </connections>
                 </viewController>
@@ -153,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1072.8" y="730.88455772113946"/>
         </scene>
-        <!--View Controller-->
+        <!--Reveal View Controller-->
         <scene sceneID="NhU-Wv-xAM">
             <objects>
-                <viewController id="CYb-vh-CYt" sceneMemberID="viewController">
+                <viewController id="CYb-vh-CYt" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jw3-3n-MPn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +180,111 @@
                         <viewLayoutGuide key="safeArea" id="C4s-PS-8cB"/>
                     </view>
                     <navigationItem key="navigationItem" id="PZZ-Is-pT5"/>
+                    <connections>
+                        <segue destination="Psv-cM-TI0" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Ohw-59-fsG"/>
+                        <segue destination="Yln-CO-jLN" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="BB7-xe-9If"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyp-UG-vla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1967" y="731"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kR7-4a-4EC">
+            <objects>
+                <navigationController id="Yln-CO-jLN" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5VD-AS-n3y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kGs-Lf-2vh" kind="relationship" relationship="rootViewController" id="nEW-bN-f3y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwN-ww-GC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966" y="1475"/>
+        </scene>
+        <!--Claire jakoby-->
+        <scene sceneID="p3P-tX-aJU">
+            <objects>
+                <viewController id="kGs-Lf-2vh" customClass="MainPage" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TnS-5R-0h4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJLogoWhite-1x" translatesAutoresizingMaskIntoConstraints="NO" id="VzJ-Lj-BwH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="1ur-UG-3cl"/>
+                                    <constraint firstAttribute="width" constant="375" id="916-Kd-mot"/>
+                                    <constraint firstAttribute="width" secondItem="VzJ-Lj-BwH" secondAttribute="height" multiplier="125:73" id="ws2-3O-7m3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-bv-ZTy">
+                                <rect key="frame" x="22" y="259" width="331" height="324"/>
+                                <string key="text">Dit is een place holder. Hier komt de main page text en hierboven komen een aantal foto's die je kan swipe maar ook met een timer verwisselen....</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="trailing" secondItem="07O-nI-y3e" secondAttribute="trailing" id="GaB-l2-vw3"/>
+                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" id="Rhi-ta-4Rz"/>
+                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="top" secondItem="VzJ-Lj-BwH" secondAttribute="bottom" constant="40" id="aGx-ob-fkD"/>
+                            <constraint firstItem="07O-nI-y3e" firstAttribute="bottom" secondItem="xeg-bv-ZTy" secondAttribute="bottom" constant="20" id="jdd-Rk-ua3"/>
+                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" constant="22" id="uUv-ih-2oo"/>
+                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="top" secondItem="07O-nI-y3e" secondAttribute="top" id="vlr-ly-QIx"/>
+                            <constraint firstItem="07O-nI-y3e" firstAttribute="trailing" secondItem="xeg-bv-ZTy" secondAttribute="trailing" constant="22" id="wan-yN-9s2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="07O-nI-y3e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Claire jakoby" id="dpt-l0-M7Q">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wm7-Ba-oTn"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="menuButton" destination="wm7-Ba-oTn" id="Mdi-GN-yPi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7V-fO-hqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600.8000000000002" y="1474.8125937031487"/>
+        </scene>
+        <!--Reveal Menu TableVC-->
+        <scene sceneID="5Ch-es-zI7">
+            <objects>
+                <tableViewController id="Psv-cM-TI0" customClass="RevealMenuTableVC" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7yT-be-st8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="YeH-eb-Imk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeH-eb-Imk" id="KfV-Dt-Ntu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kGs-Lf-2vh" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="YJg-5N-UnH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Psv-cM-TI0" id="3q5-0O-0Bp"/>
+                            <outlet property="delegate" destination="Psv-cM-TI0" id="Yid-Xp-Ilf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSw-bE-bCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2818" y="731"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="yB7-b3-mzE">
@@ -200,4 +317,10 @@
             <point key="canvasLocation" x="-1012" y="731"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CJLogoWhite-1x" width="283" height="136"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nEW-bN-f3y"/>
+    </inferredMetricsTieBreakers>
 </document>
