@@ -214,46 +214,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJLogoWhite-1x" translatesAutoresizingMaskIntoConstraints="NO" id="VzJ-Lj-BwH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
-                                <color key="backgroundColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="219" id="1ur-UG-3cl"/>
-                                    <constraint firstAttribute="width" constant="375" id="916-Kd-mot"/>
-                                    <constraint firstAttribute="width" secondItem="VzJ-Lj-BwH" secondAttribute="height" multiplier="125:73" id="ws2-3O-7m3"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-bv-ZTy">
-                                <rect key="frame" x="22" y="259" width="331" height="324"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-bv-ZTy">
+                                <rect key="frame" x="22" y="220" width="331" height="363"/>
                                 <string key="text">Dit is een place holder. Hier komt de main page text en hierboven komen een aantal foto's die je kan swipe maar ook met een timer verwisselen....</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ok-d7-HQE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6FM-Em-2De">
+                                <rect key="frame" x="140" y="152" width="95" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="hfc-Gh-5Q0"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.28627450980000002" green="0.79607843140000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.85490196078431369" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="trailing" secondItem="07O-nI-y3e" secondAttribute="trailing" id="GaB-l2-vw3"/>
-                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" id="Rhi-ta-4Rz"/>
-                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="top" secondItem="VzJ-Lj-BwH" secondAttribute="bottom" constant="40" id="aGx-ob-fkD"/>
-                            <constraint firstItem="07O-nI-y3e" firstAttribute="bottom" secondItem="xeg-bv-ZTy" secondAttribute="bottom" constant="20" id="jdd-Rk-ua3"/>
-                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" constant="22" id="uUv-ih-2oo"/>
-                            <constraint firstItem="VzJ-Lj-BwH" firstAttribute="top" secondItem="07O-nI-y3e" secondAttribute="top" id="vlr-ly-QIx"/>
-                            <constraint firstItem="07O-nI-y3e" firstAttribute="trailing" secondItem="xeg-bv-ZTy" secondAttribute="trailing" constant="22" id="wan-yN-9s2"/>
+                            <constraint firstItem="7ok-d7-HQE" firstAttribute="centerX" secondItem="6FM-Em-2De" secondAttribute="centerX" id="64k-DR-Vz6"/>
+                            <constraint firstItem="6FM-Em-2De" firstAttribute="top" secondItem="07O-nI-y3e" secondAttribute="top" constant="152" id="8rK-0t-FaR"/>
+                            <constraint firstAttribute="bottom" secondItem="xeg-bv-ZTy" secondAttribute="bottom" constant="20" symbolic="YES" id="JZo-yN-YPu"/>
+                            <constraint firstItem="7ok-d7-HQE" firstAttribute="bottom" secondItem="6FM-Em-2De" secondAttribute="bottom" constant="1" id="LRe-Ca-BFK"/>
+                            <constraint firstItem="7ok-d7-HQE" firstAttribute="leading" secondItem="TnS-5R-0h4" secondAttribute="leading" id="Rxz-be-1dJ"/>
+                            <constraint firstItem="6FM-Em-2De" firstAttribute="centerX" secondItem="xeg-bv-ZTy" secondAttribute="centerX" id="VLb-GJ-mQd"/>
+                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" constant="22" id="Zj8-wI-Ddf"/>
+                            <constraint firstAttribute="trailing" secondItem="7ok-d7-HQE" secondAttribute="trailing" id="jw3-PS-9mp"/>
+                            <constraint firstItem="xeg-bv-ZTy" firstAttribute="top" secondItem="7ok-d7-HQE" secondAttribute="bottom" constant="30" id="vtR-XE-5ud"/>
+                            <constraint firstItem="6FM-Em-2De" firstAttribute="leading" secondItem="07O-nI-y3e" secondAttribute="leading" constant="140" id="xVp-Rh-KMv"/>
+                            <constraint firstItem="7ok-d7-HQE" firstAttribute="top" secondItem="07O-nI-y3e" secondAttribute="top" id="yfL-Q4-A9T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="07O-nI-y3e"/>
                     </view>
                     <navigationItem key="navigationItem" title="Claire jakoby" id="dpt-l0-M7Q">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wm7-Ba-oTn"/>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wm7-Ba-oTn">
+                            <color key="tintColor" red="1" green="0.85490196080000003" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="menuButton" destination="wm7-Ba-oTn" id="Mdi-GN-yPi"/>
+                        <outlet property="pageControl" destination="6FM-Em-2De" id="V61-VW-AmG"/>
+                        <outlet property="scrollView" destination="7ok-d7-HQE" id="NE9-bL-wXd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7V-fO-hqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3606" y="1549"/>
+            <point key="canvasLocation" x="3605.5999999999999" y="1548.5757121439281"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="5Ch-es-zI7">
@@ -415,9 +425,6 @@
             <point key="canvasLocation" x="-1012" y="731"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="CJLogoWhite-1x" width="283" height="136"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="d1I-1U-8uX"/>
     </inferredMetricsTieBreakers>
