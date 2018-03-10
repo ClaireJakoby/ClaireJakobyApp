@@ -27,15 +27,15 @@ class MainPage : UIViewController, UIScrollViewDelegate {
         // SlideShow Code
         //------------------------
         self.scrollView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:self.view.frame.height)
-        let scrollViewWidth:CGFloat = self.scrollView.frame.width
-        let scrollViewHeight:CGFloat = self.scrollView.frame.height
+        let scrollViewWidth:CGFloat = 375
+        let scrollViewHeight:CGFloat = 190
         
         let imgOne = UIImageView(frame: CGRect(x:0, y:0,width:scrollViewWidth, height:scrollViewHeight))
-        imgOne.image = UIImage(named: "XXXXXXX")
+        imgOne.image = UIImage(named: "DiplomaDag")
         let imgTwo = UIImageView(frame: CGRect(x:scrollViewWidth, y:0,width:scrollViewWidth, height:scrollViewHeight))
-        imgTwo.image = UIImage(named: "XXXXXXX")
+        imgTwo.image = UIImage(named: "IkZwartWit")
         let imgThree = UIImageView(frame: CGRect(x:scrollViewWidth*2, y:0,width:scrollViewWidth, height:scrollViewHeight))
-        imgThree.image = UIImage(named: "XXXXXXXX")
+        imgThree.image = UIImage(named: "MeidenGroepKlas")
 
         
         self.scrollView.addSubview(imgOne)

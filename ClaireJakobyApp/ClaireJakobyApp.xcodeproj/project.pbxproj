@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		20158861E04C7A948C125DF7 /* Pods_ClaireJakobyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */; };
+		FF51B8402054054600ECBABA /* WieBenIk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51B83F2054054600ECBABA /* WieBenIk.swift */; };
+		FF51B843205407E300ECBABA /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51B842205407E300ECBABA /* UIView+Rotation.swift */; };
 		FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57C47C204D6B6A00193A0F /* AppDelegate.swift */; };
 		FF57C482204D6B6B00193A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF57C480204D6B6B00193A0F /* Main.storyboard */; };
 		FF57C484204D6B6B00193A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF57C483204D6B6B00193A0F /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		506386F99767D6CF2A184DA4 /* Pods-ClaireJakobyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClaireJakobyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5814A83B5E839662032458 /* Pods-ClaireJakobyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.release.xcconfig"; sourceTree = "<group>"; };
+		FF51B83F2054054600ECBABA /* WieBenIk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WieBenIk.swift; sourceTree = "<group>"; };
+		FF51B842205407E300ECBABA /* UIView+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rotation.swift"; sourceTree = "<group>"; };
 		FF57C479204D6B6A00193A0F /* ClaireJakobyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaireJakobyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF57C47C204D6B6A00193A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF57C481204D6B6B00193A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF51B8412054054C00ECBABA /* Wie ben ik */ = {
+			isa = PBXGroup;
+			children = (
+				FF51B83F2054054600ECBABA /* WieBenIk.swift */,
+				FF51B842205407E300ECBABA /* UIView+Rotation.swift */,
+			);
+			path = "Wie ben ik";
+			sourceTree = "<group>";
+		};
 		FF57C470204D6B6900193A0F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FF57C47C204D6B6A00193A0F /* AppDelegate.swift */,
+				FF51B8412054054C00ECBABA /* Wie ben ik */,
 				FF976519204F2D7800E12F30 /* Main Page */,
 				FFAD222C204D70EC00C3B77A /* Intro */,
 				FF57C480204D6B6B00193A0F /* Main.storyboard */,
@@ -282,7 +296,9 @@
 			files = (
 				FFAD2232204D71F100C3B77A /* IntroViewController.swift in Sources */,
 				FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */,
+				FF51B843205407E300ECBABA /* UIView+Rotation.swift in Sources */,
 				FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */,
+				FF51B8402054054600ECBABA /* WieBenIk.swift in Sources */,
 				FF97651B204F31E000E12F30 /* MainPage.swift in Sources */,
 				FFAD222B204D6F4C00C3B77A /* SWRevealViewController.m in Sources */,
 				FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */,
