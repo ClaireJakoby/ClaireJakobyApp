@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "test1.png",
+      "filename" : "Mandala.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "test1-1.png",
+      "filename" : "Mandala-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "test1-2.png",
+      "filename" : "Mandala-2.png",
       "scale" : "3x"
     }
   ],
