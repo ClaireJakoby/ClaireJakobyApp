@@ -25,6 +25,8 @@
 		FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2239204D729E00C3B77A /* Swift+Gif.swift */; };
 		FFAD223C204D72E100C3B77A /* Swipe_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFAD223B204D72E100C3B77A /* Swipe_animation.gif */; };
 		FFAD223E204D72FF00C3B77A /* knock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFAD223D204D72FE00C3B77A /* knock.mp3 */; };
+		FFBE7F24205684DD000A2A12 /* OpleidingenTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBE7F23205684DD000A2A12 /* OpleidingenTableView.swift */; };
+		FFEFC50420573F5F00C806BD /* CustomCellOpleidingen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFC50320573F5F00C806BD /* CustomCellOpleidingen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		FFAD2239204D729E00C3B77A /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		FFAD223B204D72E100C3B77A /* Swipe_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Swipe_animation.gif; sourceTree = "<group>"; };
 		FFAD223D204D72FE00C3B77A /* knock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knock.mp3; sourceTree = "<group>"; };
+		FFBE7F23205684DD000A2A12 /* OpleidingenTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpleidingenTableView.swift; sourceTree = "<group>"; };
+		FFEFC50320573F5F00C806BD /* CustomCellOpleidingen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellOpleidingen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FF57C47C204D6B6A00193A0F /* AppDelegate.swift */,
+				FFEFC50220573A3100C806BD /* Opleidingen */,
 				FF51B8412054054C00ECBABA /* Wie ben ik */,
 				FF976519204F2D7800E12F30 /* Main Page */,
 				FFAD222C204D70EC00C3B77A /* Intro */,
@@ -160,6 +165,15 @@
 				FFAD223D204D72FE00C3B77A /* knock.mp3 */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		FFEFC50220573A3100C806BD /* Opleidingen */ = {
+			isa = PBXGroup;
+			children = (
+				FFBE7F23205684DD000A2A12 /* OpleidingenTableView.swift */,
+				FFEFC50320573F5F00C806BD /* CustomCellOpleidingen.swift */,
+			);
+			path = Opleidingen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +311,8 @@
 				FFAD2232204D71F100C3B77A /* IntroViewController.swift in Sources */,
 				FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */,
 				FF51B843205407E300ECBABA /* UIView+Rotation.swift in Sources */,
+				FFEFC50420573F5F00C806BD /* CustomCellOpleidingen.swift in Sources */,
+				FFBE7F24205684DD000A2A12 /* OpleidingenTableView.swift in Sources */,
 				FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */,
 				FF51B8402054054600ECBABA /* WieBenIk.swift in Sources */,
 				FF97651B204F31E000E12F30 /* MainPage.swift in Sources */,

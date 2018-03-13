@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJLogoWhite-1x" translatesAutoresizingMaskIntoConstraints="NO" id="eM6-hT-HPj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="eM6-hT-HPj">
                                 <rect key="frame" x="45.5" y="265" width="283" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="283" id="QZ4-xe-euY"/>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CJLogoWhite-1x" width="283" height="136"/>
+        <image name="CJLogoWhite" width="283" height="136"/>
     </resources>
 </document>
