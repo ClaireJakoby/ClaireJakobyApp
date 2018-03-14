@@ -260,7 +260,7 @@
                         <viewLayoutGuide key="safeArea" id="07O-nI-y3e"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main Page" id="dpt-l0-M7Q">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wm7-Ba-oTn">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="wm7-Ba-oTn">
                             <color key="tintColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -390,7 +390,7 @@
                         <viewLayoutGuide key="safeArea" id="NCP-Jd-qSP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Opleidingen" id="3zf-T5-gRc">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="nDh-Qj-w5f">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="nDh-Qj-w5f">
                             <color key="tintColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -418,6 +418,174 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nxv-3M-pqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3606" y="731"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rC0-yK-e6W">
+            <objects>
+                <navigationController id="Uny-5t-Ube" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ViV-0S-WdS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L9k-hO-OiS" kind="relationship" relationship="rootViewController" id="o0x-BP-R9v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epz-KY-Xpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3606" y="2985"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="y0e-PP-0hP">
+            <objects>
+                <viewController id="L9k-hO-OiS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1d-Y8-EHx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="telefoon: 0629846231" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYx-sM-AOo">
+                                <rect key="frame" x="16" y="126" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XRf-5K-cF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSh-HD-12C">
+                                <rect key="frame" x="16" y="155" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zjF-BN-xtU"/>
+                                </constraints>
+                                <state key="normal" title="Of bel me direct"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mail: ce.jakoby@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpC-mN-sU2">
+                                <rect key="frame" x="16" y="232" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L9y-sE-9d5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-4J-dwC">
+                                <rect key="frame" x="16" y="261" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yZt-f8-dnV"/>
+                                </constraints>
+                                <state key="normal" title="of mail me direct"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-n9-8RT">
+                                <rect key="frame" x="16" y="368" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DPc-HA-zE8"/>
+                                </constraints>
+                                <state key="normal" title="Check waar ik woon op de kaart"/>
+                                <connections>
+                                    <segue destination="j93-y5-1u9" kind="show" id="lSf-Yn-uUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkE-Fr-80g">
+                                <rect key="frame" x="56" y="425" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kd1-MN-FcP"/>
+                                    <constraint firstAttribute="width" constant="100" id="jW7-YD-kfX"/>
+                                    <constraint firstAttribute="width" secondItem="RkE-Fr-80g" secondAttribute="height" multiplier="1:1" id="ntY-uc-fb0"/>
+                                </constraints>
+                                <state key="normal" title="LinkedIn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-zL-vb5">
+                                <rect key="frame" x="218" y="425" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ofz-zL-vb5" secondAttribute="height" multiplier="1:1" id="DAL-ga-oKw"/>
+                                    <constraint firstAttribute="width" constant="100" id="agk-eM-mDQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="t6G-eU-HoG"/>
+                                </constraints>
+                                <state key="normal" title="GitHub"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAL-mZ-L6K">
+                                <rect key="frame" x="16" y="557" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W14-2Z-Hu6"/>
+                                </constraints>
+                                <state key="normal" title="Download mijn cv :) in pdf"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-nQ-js4">
+                                <rect key="frame" x="60" y="317" width="255" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DuD-OV-zpq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="ZYx-sM-AOo" secondAttribute="trailing" constant="16" id="8TT-Ah-dY3"/>
+                            <constraint firstItem="BSh-HD-12C" firstAttribute="top" secondItem="ZYx-sM-AOo" secondAttribute="bottom" constant="8" id="AZQ-HS-gbc"/>
+                            <constraint firstItem="Ofz-zL-vb5" firstAttribute="top" secondItem="Bav-n9-8RT" secondAttribute="bottom" constant="27" id="BkQ-RV-ncG"/>
+                            <constraint firstItem="XfM-4J-dwC" firstAttribute="top" secondItem="IpC-mN-sU2" secondAttribute="bottom" constant="8" id="CpR-gk-jbb"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="3ZK-nQ-js4" secondAttribute="trailing" constant="60" id="EBG-PD-8My"/>
+                            <constraint firstItem="3ZK-nQ-js4" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="60" id="FV8-ak-6RP"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="Ofz-zL-vb5" secondAttribute="trailing" constant="57" id="FdE-T7-U9D"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="IpC-mN-sU2" secondAttribute="trailing" constant="16" id="LPl-7h-knk"/>
+                            <constraint firstItem="IpC-mN-sU2" firstAttribute="top" secondItem="BSh-HD-12C" secondAttribute="bottom" constant="47" id="PXL-Wy-Cec"/>
+                            <constraint firstItem="ZYx-sM-AOo" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="S3j-Ke-wWC"/>
+                            <constraint firstItem="XAL-mZ-L6K" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="SGc-lb-pPp"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="XfM-4J-dwC" secondAttribute="trailing" constant="16" id="Wp8-5m-FKV"/>
+                            <constraint firstItem="XfM-4J-dwC" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="XG4-aD-UtW"/>
+                            <constraint firstItem="BSh-HD-12C" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="YuE-Mk-Bh7"/>
+                            <constraint firstItem="IpC-mN-sU2" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="bbt-JF-GUq"/>
+                            <constraint firstItem="Bav-n9-8RT" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="16" id="e6l-gZ-vUG"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="XAL-mZ-L6K" secondAttribute="trailing" constant="16" id="efI-nA-8AU"/>
+                            <constraint firstItem="Bav-n9-8RT" firstAttribute="top" secondItem="3ZK-nQ-js4" secondAttribute="bottom" constant="1" id="iW0-Ih-wKq"/>
+                            <constraint firstItem="RkE-Fr-80g" firstAttribute="top" secondItem="Bav-n9-8RT" secondAttribute="bottom" constant="27" id="kgb-OW-bLV"/>
+                            <constraint firstItem="XAL-mZ-L6K" firstAttribute="top" secondItem="RkE-Fr-80g" secondAttribute="bottom" constant="32" id="nIY-ys-LP0"/>
+                            <constraint firstItem="RkE-Fr-80g" firstAttribute="leading" secondItem="e8K-ru-zvW" secondAttribute="leading" constant="56" id="nhk-j2-jfa"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="BSh-HD-12C" secondAttribute="trailing" constant="16" id="qvQ-70-BRM"/>
+                            <constraint firstItem="3ZK-nQ-js4" firstAttribute="top" secondItem="XfM-4J-dwC" secondAttribute="bottom" constant="26" id="tim-oM-Eqh"/>
+                            <constraint firstItem="e8K-ru-zvW" firstAttribute="trailing" secondItem="Bav-n9-8RT" secondAttribute="trailing" constant="16" id="utO-tM-AfT"/>
+                            <constraint firstItem="ZYx-sM-AOo" firstAttribute="top" secondItem="e8K-ru-zvW" secondAttribute="top" constant="62" id="xAc-oO-Yg6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e8K-ru-zvW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="9gO-12-LMd">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="XyZ-UC-ZhC"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rue-G8-Kym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4384.8000000000002" y="2983.3583208395803"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="WZ4-da-Ggf">
+            <objects>
+                <viewController id="j93-y5-1u9" customClass="MapViewController" customModule="ClaireJakobyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LI3-vR-JJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hta-sW-FcN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hta-sW-FcN" firstAttribute="top" secondItem="eS8-xm-ly0" secondAttribute="top" id="6cD-e7-S0O"/>
+                            <constraint firstItem="Hta-sW-FcN" firstAttribute="trailing" secondItem="eS8-xm-ly0" secondAttribute="trailing" id="cdG-16-IJ0"/>
+                            <constraint firstItem="Hta-sW-FcN" firstAttribute="bottom" secondItem="eS8-xm-ly0" secondAttribute="bottom" id="lyF-2F-h6T"/>
+                            <constraint firstItem="Hta-sW-FcN" firstAttribute="leading" secondItem="eS8-xm-ly0" secondAttribute="leading" id="qdC-kb-Qbt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eS8-xm-ly0"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Hta-sW-FcN" id="kPE-pH-3be"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TR8-14-ywd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5141.6000000000004" y="2983.3583208395803"/>
         </scene>
         <!--Wie ben ik?-->
         <scene sceneID="eLX-G7-hYe">
@@ -482,7 +650,7 @@
                         <viewLayoutGuide key="safeArea" id="5EK-MB-pre"/>
                     </view>
                     <navigationItem key="navigationItem" title="Wie ben ik?" id="ptP-nu-gC5">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="EQI-vG-ugb">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="EQI-vG-ugb">
                             <color key="tintColor" red="0.0" green="0.7725490196" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -580,7 +748,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schooling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-S1-jZZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-S1-jZZ">
                                                     <rect key="frame" x="16" y="12" width="76" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -674,6 +842,7 @@
     <resources>
         <image name="KnockButton" width="100" height="100"/>
         <image name="Mandala" width="283" height="283"/>
+        <image name="MenuButton" width="22" height="22"/>
         <image name="MinisterCalsSchool" width="128" height="128"/>
         <image name="ProfielFoto" width="150" height="150"/>
     </resources>

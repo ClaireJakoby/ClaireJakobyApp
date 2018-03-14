@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20158861E04C7A948C125DF7 /* Pods_ClaireJakobyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */; };
+		FF4D58862057F654006028AD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D58852057F654006028AD /* ContactViewController.swift */; };
+		FF4D58892057F6AA006028AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D58882057F6AA006028AD /* MapViewController.swift */; };
+		FF4D588B2057FE83006028AD /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D588A2057FE83006028AD /* CustomAnnotation.swift */; };
 		FF51B8402054054600ECBABA /* WieBenIk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51B83F2054054600ECBABA /* WieBenIk.swift */; };
 		FF51B843205407E300ECBABA /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF51B842205407E300ECBABA /* UIView+Rotation.swift */; };
 		FF57C47D204D6B6A00193A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57C47C204D6B6A00193A0F /* AppDelegate.swift */; };
@@ -33,6 +36,9 @@
 		506386F99767D6CF2A184DA4 /* Pods-ClaireJakobyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		72CA3BD730864CC1992BA463 /* Pods_ClaireJakobyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClaireJakobyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5814A83B5E839662032458 /* Pods-ClaireJakobyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClaireJakobyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClaireJakobyApp/Pods-ClaireJakobyApp.release.xcconfig"; sourceTree = "<group>"; };
+		FF4D58852057F654006028AD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FF4D58882057F6AA006028AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FF4D588A2057FE83006028AD /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		FF51B83F2054054600ECBABA /* WieBenIk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WieBenIk.swift; sourceTree = "<group>"; };
 		FF51B842205407E300ECBABA /* UIView+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rotation.swift"; sourceTree = "<group>"; };
 		FF57C479204D6B6A00193A0F /* ClaireJakobyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaireJakobyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +97,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF4D58872057F65D006028AD /* Contact Page */ = {
+			isa = PBXGroup;
+			children = (
+				FF4D58852057F654006028AD /* ContactViewController.swift */,
+				FF4D58882057F6AA006028AD /* MapViewController.swift */,
+				FF4D588A2057FE83006028AD /* CustomAnnotation.swift */,
+			);
+			path = "Contact Page";
+			sourceTree = "<group>";
+		};
 		FF51B8412054054C00ECBABA /* Wie ben ik */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				FF57C47C204D6B6A00193A0F /* AppDelegate.swift */,
+				FF4D58872057F65D006028AD /* Contact Page */,
 				FFEFC50220573A3100C806BD /* Opleidingen */,
 				FF51B8412054054C00ECBABA /* Wie ben ik */,
 				FF976519204F2D7800E12F30 /* Main Page */,
@@ -310,6 +327,8 @@
 			files = (
 				FFAD2232204D71F100C3B77A /* IntroViewController.swift in Sources */,
 				FFAD2236204D721C00C3B77A /* IntroView2.swift in Sources */,
+				FF4D588B2057FE83006028AD /* CustomAnnotation.swift in Sources */,
+				FF4D58862057F654006028AD /* ContactViewController.swift in Sources */,
 				FF51B843205407E300ECBABA /* UIView+Rotation.swift in Sources */,
 				FFEFC50420573F5F00C806BD /* CustomCellOpleidingen.swift in Sources */,
 				FFBE7F24205684DD000A2A12 /* OpleidingenTableView.swift in Sources */,
@@ -320,6 +339,7 @@
 				FFAD223A204D729E00C3B77A /* Swift+Gif.swift in Sources */,
 				FFAD2238204D723800C3B77A /* KnockScreen.swift in Sources */,
 				FFAD2234204D721000C3B77A /* IntroView1.swift in Sources */,
+				FF4D58892057F6AA006028AD /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
